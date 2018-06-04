@@ -85,8 +85,10 @@ wget https://raw.githubusercontent.com/ColtSeals/estuda/master/MelhorarVelocidad
 chmod +x /bin/MelhorarVelocidade
 wget https://raw.githubusercontent.com/ColtSeals/estuda/master/PasswordRoot -O /bin/PasswordRoot
 chmod +x /bin/PasswordRoot
-wget https://raw.githubusercontent.com/ColtSeals/estuda/master/speedtest -O /bin/speedtest
-chmod +x /bin/speedtest
+wget https://raw.githubusercontent.com/ColtSeals/estuda/master/speedtest.py -O /bin/speedtest.py
+chmod +x /bin/speedtest.py
+wget https://raw.githubusercontent.com/ColtSeals/estuda/master/connectiontest.sh -O /bin/connectiontest.sh
+chmod +x /bin/connectiontest.sh
 wget https://raw.githubusercontent.com/ColtSeals/estuda/master/openvpn -O /bin/openvpn
 chmod +x /bin/openvpn
 wget https://raw.githubusercontent.com/ColtSeals/estuda/master/Teste -O /bin/Teste
