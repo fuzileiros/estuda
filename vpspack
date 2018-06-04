@@ -1000,8 +1000,7 @@ case $opcao in
   22)
    Banner;;
   23)
-   clear
-   speedtest-cli;;
+   connectiontest.sh;;
   24)
    LimpadorCache;;
   25)
