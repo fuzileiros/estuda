@@ -1,9 +1,14 @@
 #!/bin/bash
 
+ping=$(ping -c1 google.com |awk '{print $8 $9}' |grep -v loss |cut -d = -f2 |sed ':a;N;s/\n//g;ta')
+starts_test=$(python ./speedtest.py)
+down_load=$(echo "$starts_test" | grep "Download" | awk '{print $2,$3}')
+up_load=$(echo "$starts_test" | grep "Upload" | awk '{print $2,$3}')
+echo -e ": $ping"
+echo -e ": $up_load"
+echo -e ": $down_load"
+
 clear
-echo -e "\033[01;35m -------------------------------------------------"
-echo -e "\033[01;35m|                  \033[01;33m    ADM VPS\033[01;35m                   |"
-echo -e "\033[01;35m -------------------------------------------------"
 echo ""
 echo -e "\033[01;36mAguarde..."
 echo ""
